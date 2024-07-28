@@ -5,6 +5,7 @@ env:
   SESSION_NAME: gh-oidc-${{ github.run_id }}-${{ github.run_attempt }}
 jobs:
   connect:
+    timeout-minutes: 5
     runs-on: ubuntu-latest
     permissions:
       id-token: write
